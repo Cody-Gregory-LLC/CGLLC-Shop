@@ -1,0 +1,10 @@
+{
+  "name": "cgllc-shop",
+  "version": "1.0.0",
+  "description": "Static GitHub Pages site for CGLLC services",
+  "private": true,
+  "scripts": {},
+  "keywords": [],
+  "author": "Cody Gregory LLC",
+  "license": "MIT"
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cody Gregory LLC — CNC Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+      }
+    </style>
+  </head>
+
+  <body class="bg-zinc-900 text-white px-6 py-12">
+    <main class="max-w-7xl mx-auto">
+      <!-- Header -->
+      <header class="text-center mb-20">
+        <h1 class="text-4xl sm:text-5xl font-bold mb-4">Cody Gregory LLC</h1>
+        <p class="text-zinc-400 text-lg">
+          Precision-crafted farrier tools and CNC manufacturing services
+        </p>
+      </header>
+
+      <!-- Services Grid -->
+     <section class="mt-20">
+  <h2 class="text-2xl font-semibold mb-6 text-center">Our Services</h2>
+  <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+    
+    <!-- General Machining -->
+    <div class="bg-zinc-800 p-6 rounded-2xl shadow hover:shadow-lg transition">
+      <h3 class="text-xl font-semibold mb-2">General Machining Services</h3>
+      <ul class="list-disc list-inside text-zinc-300 text-sm space-y-1">
+        <li>CNC Milling (4-axis)</li>
+        <li>Custom Tool Fabrication</li>
+        <li>Custom Parts Fabrication</li>
+        <li>Fixture and Jig Design</li>
+        <li>Prototyping and Tool Production</li>
+        <li>Forging Press</li>
+      </ul>
+    </div>
+
+    <!-- Finishing -->
+    <div class="bg-zinc-800 p-6 rounded-2xl shadow hover:shadow-lg transition">
+      <h3 class="text-xl font-semibold mb-2">Finishing & Secondary Services</h3>
+      <ul class="list-disc list-inside text-zinc-300 text-sm space-y-1">
+        <li>Heat Treating</li>
+        <li>Deburring and Polishing</li>
+      </ul>
+    </div>
+
+    <!-- Engineering -->
+    <div class="bg-zinc-800 p-6 rounded-2xl shadow hover:shadow-lg transition">
+      <h3 class="text-xl font-semibold mb-2">Design, Engineering, & Prototyping</h3>
+      <ul class="list-disc list-inside text-zinc-300 text-sm space-y-1">
+        <li>3D Modeling, Design, & Programming (Fusion 360)</li>
+        <li>3D Printing</li>
+        <li>3D Scanning</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+      <!-- Contact Form -->
+      <section class="mt-24 max-w-xl mx-auto">
+        <h2 class="text-2xl font-semibold mb-4">Request a Quote</h2>
+        <form
+          action="https://formspree.io/f/mexample" 
+          method="POST"
+          class="grid gap-4"
+        >
+          <input
+            name="name"
+            type="text"
+            required
+            placeholder="Your Name"
+            class="bg-zinc-800 border border-zinc-700 rounded px-4 py-2 text-white placeholder-zinc-500"
+          />
+          <input
+            name="email"
+            type="email"
+            required
+            placeholder="Your Email"
+            class="bg-zinc-800 border border-zinc-700 rounded px-4 py-2 text-white placeholder-zinc-500"
+          />
+          <textarea
+            name="message"
+            required
+            rows="5"
+            placeholder="Project details or questions..."
+            class="bg-zinc-800 border border-zinc-700 rounded px-4 py-2 text-white placeholder-zinc-500"
+          ></textarea>
+          <button
+            type="submit"
+            class="bg-indigo-600 hover:bg-indigo-500 text-white font-medium px-6 py-2 rounded-lg"
+          >
+            Send Message
+          </button>
+        </form>
+      </section>
+
+      <!-- Footer -->
+      <footer class="mt-24 text-center text-zinc-500 text-sm">
+        © 2025 Cody Gregory LLC. All rights reserved.
+      </footer>
+    </main>
+  </body>
+</html>
