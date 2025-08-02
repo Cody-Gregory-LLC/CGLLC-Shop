@@ -6,110 +6,199 @@
     <title>Cody Gregory LLC — CNC Services</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Professional font for titles: Lora -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <style>
-      body {
-        font-family: 'Orbitron', 'Roboto Mono', 'system-ui', sans-serif;
+      body, .font-sans {
+        font-family: 'Merriweather', 'Times New Roman', Times, serif;
+      }
+      .font-title {
+        font-family: 'Lora', 'Merriweather', 'Times New Roman', Times, serif;
+        font-weight: 700;
+        letter-spacing: 0.01em;
       }
     </style>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   </head>
+  <body class="bg-gradient-to-br from-zinc-900 via-black to-zinc-800 text-white px-4 py-8 min-h-screen relative overflow-x-hidden font-sans">
+    <!-- Subtle Accent Circles -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[400px] h-[400px] bg-zinc-700 opacity-10 blur-2xl rounded-full pointer-events-none"></div>
+    <div class="absolute bottom-0 right-1/4 w-[200px] h-[200px] bg-zinc-800 opacity-10 blur-xl rounded-full pointer-events-none"></div>
+    <main class="max-w-6xl mx-auto relative z-10">
+      <!-- Header -->
+      <header class="text-center mb-16">
+        <h1 class="font-title text-5xl sm:text-6xl font-extrabold mb-4 text-white drop-shadow-lg tracking-wide relative inline-block mx-auto">
+          <span class="inline-block align-middle mr-2"></span>Cody Gregory LLC
+          <span class="block h-1 w-32 mx-auto mt-4 rounded-full bg-gradient-to-r from-blue-500 via-white to-red-500"></span>
+        </h1>
+        <p class="text-zinc-300 text-xl font-sans italic drop-shadow mb-2">
+          Precision CNC & Machine Shop Services
+        </p>
+        <span class="inline-block bg-zinc-800/50 text-zinc-300 px-4 py-1 rounded-full text-sm font-sans tracking-wider">USA Owned & Operated</span>
+      </header>
 
- <body class="bg-gradient-to-br from-blue-900 via-zinc-900 to-black text-white px-6 py-12 min-h-screen relative overflow-x-hidden">
-  <!-- Animated Accent Circle (blue/red) -->
-  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-blue-700 opacity-20 blur-3xl rounded-full pointer-events-none animate-pulse"></div>
-  <div class="absolute bottom-0 right-1/4 w-[300px] h-[300px] bg-red-700 opacity-20 blur-2xl rounded-full pointer-events-none animate-pulse"></div>
-  <main class="max-w-7xl mx-auto relative z-10">
-    <!-- Header -->
-    <header class="text-center mb-20">
-      <h1 class="text-5xl sm:text-6xl font-extrabold mb-4 text-white drop-shadow-lg">
-        <span class="inline-block align-middle mr-2"></span>Cody Gregory LLC
-      </h1>
-      <p class="text-zinc-200 text-xl font-medium italic drop-shadow">
-        Now offering machine shop services.
-      </p>
-    </header>
-
-    <section class="mb-20">
-      <h2 class="text-3xl font-bold mb-6 text-center text-white">USA Manufacturing</h2>
-      <div class="swiper mySwiper rounded-2xl overflow-hidden shadow-xl max-w-3xl mx-auto">
-        <div class="swiper-wrapper">
-          <!-- Slide 1 -->
-          <div class="swiper-slide bg-zinc-900 flex justify-center items-center p-6">
-            <img src="https://via.placeholder.com/400x300?text=Product+1" alt="Product 1" class="rounded-xl shadow-lg max-h-72 object-contain" />
+      <!-- Product Carousel -->
+      <section class="mb-16">
+        <h2 class="font-title text-3xl font-bold mb-6 text-white text-center w-full">
+          Check Out Our Work
+          <span class="block h-1 w-24 mx-auto mt-2 rounded-full bg-gradient-to-r from-blue-500 via-white to-red-500"></span>
+        </h2>
+        <div class="swiper mySwiper rounded-2xl overflow-hidden shadow-2xl max-w-3xl mx-auto bg-zinc-900/80 border border-zinc-800">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide flex justify-center items-center p-6">
+              <img src="https://via.placeholder.com/400x300?text=Product+1" alt="Product 1" class="rounded-xl shadow-lg max-h-72 object-contain" />
+            </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide flex justify-center items-center p-6">
+              <img src="https://via.placeholder.com/400x300?text=Product+2" alt="Product 2" class="rounded-xl shadow-lg max-h-72 object-contain" />
+            </div>
+            <!-- Slide 3 -->
+            <div class="swiper-slide flex justify-center items-center p-6">
+              <img src="https://via.placeholder.com/400x300?text=Product+3" alt="Product 3" class="rounded-xl shadow-lg max-h-72 object-contain" />
+            </div>
           </div>
-          <!-- Slide 2 -->
-          <div class="swiper-slide bg-zinc-900 flex justify-center items-center p-6">
-            <img src="https://via.placeholder.com/400x300?text=Product+2" alt="Product 2" class="rounded-xl shadow-lg max-h-72 object-contain" />
-          </div>
-          <!-- Slide 3 -->
-          <div class="swiper-slide bg-zinc-900 flex justify-center items-center p-6">
-            <img src="https://via.placeholder.com/400x300?text=Product+3" alt="Product 3" class="rounded-xl shadow-lg max-h-72 object-contain" />
-          </div>
-          <!-- Add more slides as needed -->
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
-        <!-- Pagination and navigation -->
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Services Grid -->
-    <section class="mt-20">
-      <h2 class="text-3xl font-bold mb-10 text-center text-white">Our Services</h2>
-      <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
-        <!-- Card Example -->
-      <div class="bg-zinc-900/80 border border-blue-700 p-8 rounded-3xl shadow-2xl hover:scale-105 hover:shadow-blue-700/40 transition-all duration-300 group">
-        <h3 class="text-2xl font-bold mb-3 font-orbitron text-blue-400 group-hover:text-white transition">General Machining Services</h3>
-        <ul class="list-disc list-inside text-zinc-200 text-base font-mono font-normal space-y-2">
-          <li>CNC Milling (4-axis)</li>
-          <li>Custom Tool Fabrication</li>
-          <li>Custom Parts Fabrication</li>
-          <li>Fixture and Jig Design</li>
-          <li>Prototyping and Tool Production</li>
-          <li>Forging Press</li>
-        </ul>
-      </div>
-      <div class="bg-zinc-900/80 border border-white p-8 rounded-3xl shadow-2xl hover:scale-105 hover:shadow-white/40 transition-all duration-300 group">
-        <h3 class="text-2xl font-bold mb-3 font-orbitron text-white group-hover:text-blue-400 transition">Design, Engineering, & Prototyping</h3>
-        <ul class="list-disc list-inside text-zinc-200 text-base font-mono font-normal space-y-2">
-          <li>3D Modeling, Design, & Programming (Fusion 360)</li>
-          <li>3D Printing</li>
-          <li>3D Scanning</li>
-        </ul>
-      </div>
-      <div class="bg-zinc-900/80 border border-red-700 p-8 rounded-3xl shadow-2xl hover:scale-105 hover:shadow-red-700/40 transition-all duration-300 group">
-        <h3 class="text-2xl font-bold mb-3 font-orbitron text-red-400 group-hover:text-white transition">Finishing & Secondary Services</h3>
-        <ul class="list-disc list-inside text-zinc-200 text-base font-mono font-normal space-y-2">
-          <li>Heat Treating</li>
-          <li>Deburring and Polishing</li>
-        </ul>
-      </div>
-    </section>
+      <!-- Services Grid -->
+      <section class="mb-16">
+        <h2 class="font-title text-3xl font-bold mb-6 text-white text-center w-full">
+          Our Services
+          <span class="block h-1 w-24 mx-auto mt-2 rounded-full bg-gradient-to-r from-blue-500 via-white to-red-500"></span>
+        </h2>
+        <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+          <!-- Card 1: Blue accent -->
+          <div class="bg-zinc-900/90 border-t-4 border-blue-600 p-8 rounded-3xl shadow-lg hover:scale-105 hover:shadow-blue-700/30 transition-all duration-300 group">
+            <h3 class="font-title text-2xl font-bold mb-3 text-blue-400 group-hover:text-white transition text-center">General Machining</h3>
+            <ul class="list-disc list-inside text-zinc-200 text-xl font-sans font-normal space-y-2">
+              <li>CNC Milling (4-axis)</li>
+              <li>Custom Tool Fabrication</li>
+              <li>Custom Parts Fabrication</li>
+              <li>Fixture & Jig Design</li>
+              <li>Prototyping & Tool Production</li>
+              <li>Forging Press</li>
+            </ul>
+          </div>
+          <!-- Card 2: White accent -->
+          <div class="bg-zinc-900/90 border-t-4 border-white p-8 rounded-3xl shadow-lg hover:scale-105 hover:shadow-white/20 transition-all duration-300 group">
+            <h3 class="font-title text-2xl font-bold mb-3 text-white group-hover:text-blue-400 transition text-center">Design & Prototyping</h3>
+            <ul class="list-disc list-inside text-zinc-200 text-xl font-sans font-normal space-y-2">
+              <li>3D Modeling & Programming (Fusion 360)</li>
+              <li>3D Printing</li>
+              <li>3D Scanning</li>
+            </ul>
+          </div>
+          <!-- Card 3: Red accent -->
+          <div class="bg-zinc-900/90 border-t-4 border-red-600 p-8 rounded-3xl shadow-lg hover:scale-105 hover:shadow-red-700/30 transition-all duration-300 group">
+            <h3 class="font-title text-2xl font-bold mb-3 text-red-400 group-hover:text-white transition text-center">Finishing Services</h3>
+            <ul class="list-disc list-inside text-zinc-200 text-xl font-sans font-normal space-y-2">
+              <li>Heat Treating</li>
+              <li>Deburring & Polishing</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
+      <!-- Video Section -->
+      <section class="mb-16">
+        <h2 class="font-title text-3xl font-bold mb-6 text-white text-center w-full">
+          Shop Videos
+          <span class="block h-1 w-24 mx-auto mt-2 rounded-full bg-gradient-to-r from-blue-500 via-white to-red-500"></span>
+        </h2>
+        <div class="flex flex-col md:flex-row gap-8 justify-center items-center">
+          <!-- Example Embedded Video 1 -->
+          <div class="bg-zinc-900/80 rounded-2xl shadow-xl p-4 border border-zinc-700 max-w-md w-full">
+            <div class="aspect-video rounded-xl overflow-hidden mb-4">
+              <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/itvFYm8QdI0?si=a3rOClVEFRgqGXFP" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+              </iframe>
+            </div>
+            <p class="text-white font-sans text-lg text-center">Welcome to the Shop!</p>
+          </div>
+          <!-- Example Embedded Video 2 -->
+          <div class="bg-zinc-900/80 rounded-2xl shadow-xl p-4 border border-zinc-700 max-w-md w-full">
+            <div class="aspect-video rounded-xl overflow-hidden mb-4">
+              <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/xbA8_wtuseM?si=lzZajci23EARbRkx" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+              </iframe>
+            </div>
+            <p class="text-white font-sans text-lg text-center">Tool Demo</p>
+          </div>
+        </div>
+        <!-- Social Links -->
+        <div class="mt-10 flex justify-center gap-8">
+          <a href="https://www.youtube.com/@codyGregoryllc" target="_blank" rel="noopener" class="flex items-center gap-2 px-4 py-2 rounded-xl bg-red-700 hover:bg-red-600 text-white font-sans font-bold shadow transition">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a2.994 2.994 0 0 0-2.112-2.112C19.312 3.5 12 3.5 12 3.5s-7.312 0-9.386.574A2.994 2.994 0 0 0 .502 6.186C0 8.26 0 12 0 12s0 3.74.502 5.814a2.994 2.994 0 0 0 2.112 2.112C4.688 20.5 12 20.5 12 20.5s7.312 0 9.386-.574a2.994 2.994 0 0 0 2.112-2.112C24 15.74 24 12 24 12s0-3.74-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            YouTube
+          </a>
+          <a href="https://codygregoryllc.com/" target="_blank" rel="noopener" class="flex items-center gap-2 px-4 py-2 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-white font-sans font-bold shadow transition">
+            <!-- Globe Icon for Website -->
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm0-14a6 6 0 0 0-5.197 9.03c.13-.09.263-.175.397-.257C7.5 13.5 9.5 14 12 14s4.5-.5 4.8-1.227c.134.082.267.167.397.257A6 6 0 0 0 12 6z"/></svg>
+            Website
+          </a>
+          <a href="https://facebook.com/cody.awcf" target="_blank" rel="noopener" class="flex items-center gap-2 px-4 py-2 rounded-xl bg-blue-800 hover:bg-blue-700 text-white font-sans font-bold shadow transition">
+            <!-- Facebook Icon -->
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0h-21.35C.595 0 0 .592 0 1.326v21.348C0 23.408.595 24 1.325 24h11.495v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.325-.592 1.325-1.326V1.326C24 .592 23.405 0 22.675 0"></path></svg>
+            Facebook
+          </a>
+        </div>
+      </section>
 
-<section class="mt-24 max-w-xl mx-auto">
-  <h2 class="text-4xl font-extrabold mb-8 text-center text-white font-orbitron">Contact Us</h2>
-  <div class="bg-zinc-900/80 border border-blue-700 rounded-2xl p-10 shadow-xl backdrop-blur-lg text-white space-y-8 text-center font-mono font-normal text-lg">
-    <div>
-      <span class="font-bold text-blue-400 text-xl">Address:</span><br>
-      <span class="text-xl">USA based out of<br>Lamar, Missouri</span>
-    </div>
-    <div>
-      <span class="font-bold text-red-400 text-xl">Phone:</span><br>
-      <a href="tel:+15551234567" class="underline hover:text-blue-400 transition text-xl">+1(417)214-1810</a>
-    </div>
-    <div>
-      <span class="font-bold text-white text-xl">Email:</span><br>
-      <a href="mailto:info@codygregoryllc.com" class="underline hover:text-red-400 transition text-xl">codygllc465@gmail.com</a>
-    </div>
-  </div>
-</section>
+      <!-- Contact Info -->
+      <section class="mt-24 max-w-xl mx-auto">
+       <h2 class="font-title text-3xl font-bold mb-6 text-white text-center w-full">
+          Get A Quote
+          <span class="block h-1 w-24 mx-auto mt-2 rounded-full bg-gradient-to-r from-blue-500 via-white to-red-500"></span>
+        </h2>
+        <div class="bg-zinc-900/80 border border-zinc-700 rounded-2xl p-10 shadow-xl backdrop-blur-lg text-white space-y-8 text-center font-sans font-normal text-2xl">
+          <div>
+            <span class="font-bold text-zinc-300">Location:</span><br>
+            USA based out of<br>Lamar, Missouri
+          </div>
+          <div>
+            <span class="font-bold text-zinc-300">Phone:</span><br>
+            <a href="tel:+14172141810" class="underline hover:text-zinc-400 transition">Call Us</a>
+          </div>
+          <div>
+            <span class="font-bold text-zinc-300">Email:</span><br>
+            <a href="mailto:codygllc465@gmail.com" class="underline hover:text-zinc-400 transition">Request a Quote</a>
+          </div>
+        </div>
+      </section>
 
-    <!-- Footer -->
-    <footer class="mt-24 text-center text-zinc-400 text-base py-6 bg-gradient-to-r from-blue-900 via-zinc-900 to-red-900 rounded-xl shadow-inner">
-      <span class="inline-block align-middle mr-2">©</span>2025 Cody Gregory LLC. All rights reserved.
-    </footer>
-  </main>
-</body>
+      <!-- Footer -->
+      <footer class="mt-24 text-center text-zinc-400 text-lg py-6 bg-zinc-900 rounded-xl shadow-inner font-sans">
+        <span class="inline-block align-middle mr-2">©</span>2025 Cody Gregory LLC. All rights reserved.
+      </footer>
+    </main>
+    <script>
+      const swiper = new Swiper('.mySwiper', {
+        loop: true,
+        pagination: { el: '.swiper-pagination', clickable: true },
+        navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+        slidesPerView: 1,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: { delay: 3500, disableOnInteraction: false },
+      });
+    </script>
+  </body>
+</html>
