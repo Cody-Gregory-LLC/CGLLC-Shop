@@ -7,104 +7,102 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
       body {
-        font-family: system-ui, sans-serif;
+        font-family: 'Orbitron', 'Roboto Mono', 'system-ui', sans-serif;
       }
     </style>
-  </head>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    </head>
 
-  <body class="bg-zinc-900 text-white px-6 py-12">
-    <main class="max-w-7xl mx-auto">
-      <!-- Header -->
-      <header class="text-center mb-20">
-        <h1 class="text-4xl sm:text-5xl font-bold mb-4">Cody Gregory LLC</h1>
-        <p class="text-zinc-400 text-lg">
-          Precision-crafted farrier tools and CNC manufacturing services
-        </p>
-      </header>
+ <body class="bg-gradient-to-br from-blue-900 via-zinc-900 to-black text-white px-6 py-12 min-h-screen relative overflow-x-hidden">
+  <!-- Animated Accent Circle (blue/red) -->
+  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-blue-700 opacity-20 blur-3xl rounded-full pointer-events-none animate-pulse"></div>
+  <div class="absolute bottom-0 right-1/4 w-[300px] h-[300px] bg-red-700 opacity-20 blur-2xl rounded-full pointer-events-none animate-pulse"></div>
+  <main class="max-w-7xl mx-auto relative z-10">
+    <!-- Header -->
+    <header class="text-center mb-20">
+      <h1 class="text-5xl sm:text-6xl font-extrabold mb-4 text-white drop-shadow-lg">
+        <span class="inline-block align-middle mr-2"></span>Cody Gregory LLC
+      </h1>
+      <p class="text-zinc-200 text-xl font-medium italic drop-shadow">
+        Now offering machine shop services.
+      </p>
+    </header>
 
-      <!-- Services Grid -->
-     <section class="mt-20">
-  <h2 class="text-2xl font-semibold mb-6 text-center">Our Services</h2>
-  <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-    
-    <!-- General Machining -->
-    <div class="bg-zinc-800 p-6 rounded-2xl shadow hover:shadow-lg transition">
-      <h3 class="text-xl font-semibold mb-2">General Machining Services</h3>
-      <ul class="list-disc list-inside text-zinc-300 text-sm space-y-1">
-        <li>CNC Milling (4-axis)</li>
-        <li>Custom Tool Fabrication</li>
-        <li>Custom Parts Fabrication</li>
-        <li>Fixture and Jig Design</li>
-        <li>Prototyping and Tool Production</li>
-        <li>Forging Press</li>
-      </ul>
-    </div>
-
-    <!-- Finishing -->
-    <div class="bg-zinc-800 p-6 rounded-2xl shadow hover:shadow-lg transition">
-      <h3 class="text-xl font-semibold mb-2">Finishing & Secondary Services</h3>
-      <ul class="list-disc list-inside text-zinc-300 text-sm space-y-1">
-        <li>Heat Treating</li>
-        <li>Deburring and Polishing</li>
-      </ul>
-    </div>
-
-    <!-- Engineering -->
-    <div class="bg-zinc-800 p-6 rounded-2xl shadow hover:shadow-lg transition">
-      <h3 class="text-xl font-semibold mb-2">Design, Engineering, & Prototyping</h3>
-      <ul class="list-disc list-inside text-zinc-300 text-sm space-y-1">
-        <li>3D Modeling, Design, & Programming (Fusion 360)</li>
-        <li>3D Printing</li>
-        <li>3D Scanning</li>
-      </ul>
-    </div>
-
-  </div>
-</section>
+    <!-- Services Grid -->
+    <section class="mt-20">
+      <h2 class="text-3xl font-bold mb-10 text-center text-white">Our Services</h2>
+      <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Card Example -->
+      <div class="bg-zinc-900/80 border border-blue-700 p-8 rounded-3xl shadow-2xl hover:scale-105 hover:shadow-blue-700/40 transition-all duration-300 group">
+        <h3 class="text-2xl font-bold mb-3 font-orbitron text-blue-400 group-hover:text-white transition">General Machining Services</h3>
+        <ul class="list-disc list-inside text-zinc-200 text-base font-mono font-normal space-y-2">
+          <li>CNC Milling (4-axis)</li>
+          <li>Custom Tool Fabrication</li>
+          <li>Custom Parts Fabrication</li>
+          <li>Fixture and Jig Design</li>
+          <li>Prototyping and Tool Production</li>
+          <li>Forging Press</li>
+        </ul>
+      </div>
+      <div class="bg-zinc-900/80 border border-white p-8 rounded-3xl shadow-2xl hover:scale-105 hover:shadow-white/40 transition-all duration-300 group">
+        <h3 class="text-2xl font-bold mb-3 font-orbitron text-white group-hover:text-blue-400 transition">Design, Engineering, & Prototyping</h3>
+        <ul class="list-disc list-inside text-zinc-200 text-base font-mono font-normal space-y-2">
+          <li>3D Modeling, Design, & Programming (Fusion 360)</li>
+          <li>3D Printing</li>
+          <li>3D Scanning</li>
+        </ul>
+      </div>
+      <div class="bg-zinc-900/80 border border-red-700 p-8 rounded-3xl shadow-2xl hover:scale-105 hover:shadow-red-700/40 transition-all duration-300 group">
+        <h3 class="text-2xl font-bold mb-3 font-orbitron text-red-400 group-hover:text-white transition">Finishing & Secondary Services</h3>
+        <ul class="list-disc list-inside text-zinc-200 text-base font-mono font-normal space-y-2">
+          <li>Heat Treating</li>
+          <li>Deburring and Polishing</li>
+        </ul>
+      </div>
+    </section>
 
 
-      <!-- Contact Form -->
-      <section class="mt-24 max-w-xl mx-auto">
-        <h2 class="text-2xl font-semibold mb-4">Request a Quote</h2>
-        <form
-          action="https://formspree.io/f/mexample" 
-          method="POST"
-          class="grid gap-4"
+    <!-- Contact Form -->
+    <section class="mt-24 max-w-xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6 text-center text-white">Request a Quote</h2>
+      <form
+        action="https://formspree.io/f/mexample" 
+        method="POST"
+        class="grid gap-6 bg-zinc-900/80 border border-blue-700 rounded-2xl p-8 shadow-xl backdrop-blur-lg"
+      >
+        <input
+          name="name"
+          type="text"
+          required
+          placeholder="Your Name"
+          class="bg-zinc-800 border border-zinc-700 rounded px-4 py-3 text-white placeholder-zinc-400 focus:ring-2 focus:ring-blue-500 transition"
+        />
+        <input
+          name="email"
+          type="email"
+          required
+          placeholder="Your Email"
+          class="bg-zinc-800 border border-zinc-700 rounded px-4 py-3 text-white placeholder-zinc-400 focus:ring-2 focus:ring-red-500 transition"
+        />
+        <textarea
+          name="message"
+          required
+          rows="5"
+          placeholder="Project details or questions..."
+          class="bg-zinc-800 border border-zinc-700 rounded px-4 py-3 text-white placeholder-zinc-400 focus:ring-2 focus:ring-white transition"
+        ></textarea>
+        <button
+          type="submit"
+          class="bg-gradient-to-r from-blue-600 to-red-600 hover:from-blue-500 hover:to-red-500 text-white font-bold px-8 py-3 rounded-xl shadow-lg transition"
         >
-          <input
-            name="name"
-            type="text"
-            required
-            placeholder="Your Name"
-            class="bg-zinc-800 border border-zinc-700 rounded px-4 py-2 text-white placeholder-zinc-500"
-          />
-          <input
-            name="email"
-            type="email"
-            required
-            placeholder="Your Email"
-            class="bg-zinc-800 border border-zinc-700 rounded px-4 py-2 text-white placeholder-zinc-500"
-          />
-          <textarea
-            name="message"
-            required
-            rows="5"
-            placeholder="Project details or questions..."
-            class="bg-zinc-800 border border-zinc-700 rounded px-4 py-2 text-white placeholder-zinc-500"
-          ></textarea>
-          <button
-            type="submit"
-            class="bg-indigo-600 hover:bg-indigo-500 text-white font-medium px-6 py-2 rounded-lg"
-          >
-            Send Message
-          </button>
-        </form>
-      </section>
+          Send Message
+        </button>
+      </form>
+    </section>
 
-      <!-- Footer -->
-      <footer class="mt-24 text-center text-zinc-500 text-sm">
-        © 2025 Cody Gregory LLC. All rights reserved.
-      </footer>
-    </main>
-  </body>
-</html>
+    <!-- Footer -->
+    <footer class="mt-24 text-center text-zinc-400 text-base py-6 bg-gradient-to-r from-blue-900 via-zinc-900 to-red-900 rounded-xl shadow-inner">
+      <span class="inline-block align-middle mr-2">©</span>2025 Cody Gregory LLC. All rights reserved.
+    </footer>
+  </main>
+</body>
