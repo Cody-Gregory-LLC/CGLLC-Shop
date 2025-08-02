@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cody Gregory LLC — CNC Services</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <style>
       body {
         font-family: 'Orbitron', 'Roboto Mono', 'system-ui', sans-serif;
       }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
-    </head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  </head>
 
  <body class="bg-gradient-to-br from-blue-900 via-zinc-900 to-black text-white px-6 py-12 min-h-screen relative overflow-x-hidden">
   <!-- Animated Accent Circle (blue/red) -->
@@ -27,6 +29,31 @@
         Now offering machine shop services.
       </p>
     </header>
+
+    <section class="mb-20">
+      <h2 class="text-3xl font-bold mb-6 text-center text-white">USA Manufacturing</h2>
+      <div class="swiper mySwiper rounded-2xl overflow-hidden shadow-xl max-w-3xl mx-auto">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide bg-zinc-900 flex justify-center items-center p-6">
+            <img src="https://via.placeholder.com/400x300?text=Product+1" alt="Product 1" class="rounded-xl shadow-lg max-h-72 object-contain" />
+          </div>
+          <!-- Slide 2 -->
+          <div class="swiper-slide bg-zinc-900 flex justify-center items-center p-6">
+            <img src="https://via.placeholder.com/400x300?text=Product+2" alt="Product 2" class="rounded-xl shadow-lg max-h-72 object-contain" />
+          </div>
+          <!-- Slide 3 -->
+          <div class="swiper-slide bg-zinc-900 flex justify-center items-center p-6">
+            <img src="https://via.placeholder.com/400x300?text=Product+3" alt="Product 3" class="rounded-xl shadow-lg max-h-72 object-contain" />
+          </div>
+          <!-- Add more slides as needed -->
+        </div>
+        <!-- Pagination and navigation -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
 
     <!-- Services Grid -->
     <section class="mt-20">
@@ -62,43 +89,23 @@
     </section>
 
 
-    <!-- Contact Form -->
-    <section class="mt-24 max-w-xl mx-auto">
-      <h2 class="text-3xl font-bold mb-6 text-center text-white">Request a Quote</h2>
-      <form
-        action="https://formspree.io/f/mexample" 
-        method="POST"
-        class="grid gap-6 bg-zinc-900/80 border border-blue-700 rounded-2xl p-8 shadow-xl backdrop-blur-lg"
-      >
-        <input
-          name="name"
-          type="text"
-          required
-          placeholder="Your Name"
-          class="bg-zinc-800 border border-zinc-700 rounded px-4 py-3 text-white placeholder-zinc-400 focus:ring-2 focus:ring-blue-500 transition"
-        />
-        <input
-          name="email"
-          type="email"
-          required
-          placeholder="Your Email"
-          class="bg-zinc-800 border border-zinc-700 rounded px-4 py-3 text-white placeholder-zinc-400 focus:ring-2 focus:ring-red-500 transition"
-        />
-        <textarea
-          name="message"
-          required
-          rows="5"
-          placeholder="Project details or questions..."
-          class="bg-zinc-800 border border-zinc-700 rounded px-4 py-3 text-white placeholder-zinc-400 focus:ring-2 focus:ring-white transition"
-        ></textarea>
-        <button
-          type="submit"
-          class="bg-gradient-to-r from-blue-600 to-red-600 hover:from-blue-500 hover:to-red-500 text-white font-bold px-8 py-3 rounded-xl shadow-lg transition"
-        >
-          Send Message
-        </button>
-      </form>
-    </section>
+<section class="mt-24 max-w-xl mx-auto">
+  <h2 class="text-4xl font-extrabold mb-8 text-center text-white font-orbitron">Contact Us</h2>
+  <div class="bg-zinc-900/80 border border-blue-700 rounded-2xl p-10 shadow-xl backdrop-blur-lg text-white space-y-8 text-center font-mono font-normal text-lg">
+    <div>
+      <span class="font-bold text-blue-400 text-xl">Address:</span><br>
+      <span class="text-xl">USA based out of<br>Lamar, Missouri</span>
+    </div>
+    <div>
+      <span class="font-bold text-red-400 text-xl">Phone:</span><br>
+      <a href="tel:+15551234567" class="underline hover:text-blue-400 transition text-xl">+1(417)214-1810</a>
+    </div>
+    <div>
+      <span class="font-bold text-white text-xl">Email:</span><br>
+      <a href="mailto:info@codygregoryllc.com" class="underline hover:text-red-400 transition text-xl">codygllc465@gmail.com</a>
+    </div>
+  </div>
+</section>
 
     <!-- Footer -->
     <footer class="mt-24 text-center text-zinc-400 text-base py-6 bg-gradient-to-r from-blue-900 via-zinc-900 to-red-900 rounded-xl shadow-inner">
